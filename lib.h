@@ -1,1 +1,1 @@
-bool number (char)
+bool numb ();
