@@ -1,8 +1,10 @@
 #include <iostream>
+#include "lib.h"
+using namespace std;
+
 
 int main(){
   char n;
-    cout << "inserisci un carattere" << endl;
         cin >> n;
         if (number (n) && (n<=90 && n>=65)) {
         cout << char (n+32);}
