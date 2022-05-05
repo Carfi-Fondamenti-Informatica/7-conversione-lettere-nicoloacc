@@ -1,10 +1,9 @@
 #include "lib.h"
 
-bool numb (char a) {
-    if ((a > = 65 && a < = 90) || (a > = 97 && a < = 122)) {
-        return true;
-    }
-    else {
-        return false;
-         }
-    }
+bool funzione (int n){
+  if (((65<=n)&&(n<=90)) || ((97<=n) && (n<=122))){
+    return true ;
+  }else{
+    return false ;
+  }
+}
