@@ -1,9 +1,8 @@
 #include "lib.h"
 
-bool funzione (int n){
-  if (((65<=n)&&(n<=90)) || ((97<=n) && (n<=122))){
-    return true ;
-  }else{
-    return false ;
-  }
-}
+bool number (char a) {
+    if ((a<=90 && a>=65)|(a>=97 && a<=122)) {
+        return 1;
+    }
+    else {return 0;}
+    }
