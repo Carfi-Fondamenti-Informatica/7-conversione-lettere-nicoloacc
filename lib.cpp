@@ -1,11 +1,17 @@
+#include <iostream>
 #include "lib.h"
+using namespace std;
 
-bool carattere (char &a) {
-    if ((a >= 'a') && (a <= 'z')) {
-        a = a - ' ';
-        return true;
-    } else if ((a >= 'A') && (a <= 'Z')) {
-        a = a + ' ';
-        return true;
-    } else {
-        return false; }}
+
+
+int main() {
+    char n;
+        cin >> n;
+        if (number (n) && (n<=90 && n>=65)) {
+        cout << char (n+32);}
+        else if (number (n) && (n>=97 && n<=122)) {
+        cout << char (n-32);}
+        else {
+        cout << "errore"; }
+    return 0;
+}
