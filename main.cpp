@@ -8,7 +8,7 @@ int main(){
         cin >> n  ;
         if (numb (n) && (n<=90 && n>=65)) {
         cout << char (n+32);}
-        else if (number (n) && (n>=97 && n<=122)) {
+        else if (numb (n) && (n>=97 && n<=122)) {
         cout << char (n-32); }
         else {
         cout << "errore"; }
