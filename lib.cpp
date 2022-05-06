@@ -6,3 +6,4 @@ bool number (int a) {
     } else {
         return false;
          }
+}
