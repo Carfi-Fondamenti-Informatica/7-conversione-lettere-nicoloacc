@@ -2,15 +2,22 @@
 #include "lib.h"
 using namespace std;
 
+int main() {
+   char c;
+   cin >> c;
+   int n = (int) c;
+   bool x = funzione(n);
 
-int main(){
-  char n;
-        cin >> n  ;
-        if (numb (n) && (n<=90 && n>=65)) {
-        cout << char (n+32);}
-        else if (numb (n) && (n>=97 && n<=122)) {
-        cout << char (n-32); }
-        else {
-        cout << "errore"; }
-  return 0;
+   if (x==0){
+      cout<<"errore"<<endl;
+   }else if (x==1){
+      if((65 <= n)&&(n <= 90)) {
+         n=n+32;
+         cout <<(char)n<<endl;
+      } else if ((97 <=n)&&(n<=122)) {
+         n=n-32;
+         cout<<(char)n<<endl;
+      }
+   }         
+    return 0;
 }
