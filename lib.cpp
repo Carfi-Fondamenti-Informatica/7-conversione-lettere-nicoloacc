@@ -1,17 +1,8 @@
-#include <iostream>
 #include "lib.h"
-using namespace std;
 
-
-
-int main() {
-    char n;
-        cin >> n;
-        if (number (n) && (n<=90 && n>=65)) {
-        cout << char (n+32);}
-        else if (number (n) && (n>=97 && n<=122)) {
-        cout << char (n-32);}
-        else {
-        cout << "errore"; }
-    return 0;
+bool number (int a) {
+    if ((a<=90 && a>=65)|(a>=97 && a<=122)) {
+        return 1;
+    }
+    else {return 0;}
 }
