@@ -1,9 +1,11 @@
 #include "lib.h"
 
-bool carattere (int n) {
-  if ((97<=n) && (n<=122) || (65<=n)&&(n<=90)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+bool carattere (char &a) {
+    if ((a >= 'a') && (a <= 'z')) {
+        a = a - ' ';
+        return true;
+    } else if ((a >= 'A') && (a <= 'Z')) {
+        a = a + ' ';
+        return true;
+    } else {
+        return false; }}
